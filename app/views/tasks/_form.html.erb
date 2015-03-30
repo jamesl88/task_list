@@ -1,0 +1,6 @@
+<div class='form-inline'>
+  <%= form_for @task, remote: true do |f| %>
+    <%= f.text_field :name, class: 'form-control', autocomplete: 'off' %>
+    <%= f.submit 'Submit', class: 'btn btn-warning' %>
+  <% end %>
+</div>
